@@ -9,6 +9,7 @@ project 'PictureCorrectionDemo.xcodeproj'
 target 'PictureCorrectionDemo'  do
 
 pod 'ZCEasyLibrary'
+pod 'OpenCV2'
 
 end
 
