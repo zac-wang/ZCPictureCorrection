@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fD6-Av-IW6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YDF-ha-USm">
+            <objects>
+                <navigationController id="fD6-Av-IW6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="duA-Dr-zXu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sYS-nC-ovv" kind="relationship" relationship="rootViewController" id="y3n-Oi-fd2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beR-AG-eZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4HF-vE-OxT">
+            <objects>
+                <viewController id="sYS-nC-ovv" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uce-kB-FdZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAd-8g-VRb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2bS-eC-Pb5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-HT-Qgk">
+                                <rect key="frame" x="156" y="74" width="62" height="30"/>
+                                <state key="normal" title="选择图片"/>
+                                <connections>
+                                    <action selector="initButton:" destination="sYS-nC-ovv" eventType="touchUpInside" id="bKd-jw-jx8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8nL-EF-25p">
+                                <rect key="frame" x="31" y="124" width="313" height="523"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KAd-8g-VRb" firstAttribute="top" secondItem="8nL-EF-25p" secondAttribute="bottom" constant="20" id="2UC-bk-VKU"/>
+                            <constraint firstItem="8nL-EF-25p" firstAttribute="top" secondItem="Aj4-HT-Qgk" secondAttribute="bottom" constant="20" id="4TG-JJ-mCm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8nL-EF-25p" secondAttribute="trailing" constant="15" id="JcA-2n-yhZ"/>
+                            <constraint firstItem="Aj4-HT-Qgk" firstAttribute="top" secondItem="uce-kB-FdZ" secondAttribute="bottom" constant="10" id="NaA-Fk-bmO"/>
+                            <constraint firstItem="8nL-EF-25p" firstAttribute="leading" secondItem="2bS-eC-Pb5" secondAttribute="leadingMargin" constant="15" id="TbF-Qo-kjc"/>
+                            <constraint firstItem="Aj4-HT-Qgk" firstAttribute="centerX" secondItem="2bS-eC-Pb5" secondAttribute="centerX" id="jh0-4b-eoG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1yQ-w9-rNe"/>
+                    <connections>
+                        <outlet property="imageView" destination="8nL-EF-25p" id="N0b-aC-RqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dA2-V4-iYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
