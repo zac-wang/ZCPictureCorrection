@@ -17,8 +17,6 @@
 
 @property (strong, nonatomic) UIImageView *finalImageView;
 
-/// 处理图片效果类型 [0-3]
-- (void)zc_adjustPreviewImage:(int)currentlySelected completion:(void(^)(UIImage *image))completion;
 
 /// 环形进度条
 @property (strong, nonatomic) UIActivityIndicatorView *progressIndicator;
@@ -26,9 +24,9 @@
 /// 初始化按钮及事件
 - (void)zc_initialView;
 /// 旋转图片
-- (void)zc_rotateImage;
-/// 确定选择图片
-- (void)zc_comfirmFinishedImageClick;
+- (UIImage *)zc_rotateImageWithImage:(UIImage *)image;
+/// 处理图片效果类型 [0-3]
+- (UIImage *)zc_adjustPreviewImage:(int)type imageFrameEdited:(BOOL)edited sourceImage:(UIImage *)image;
 
 @property(nonatomic, copy) void(^zc_comfirmFinishedImage)(UIImage *image);
 

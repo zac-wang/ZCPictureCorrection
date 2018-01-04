@@ -24,7 +24,7 @@
 - (void)zc_initialView;
 /// 重置选择区域
 - (void)zc_resetRectFrame;
-/// 确定区域
+/// 获取 ”当前选中区域“ 的图片
 - (UIImage *)zc_confirmedImage;
 
 @property(nonatomic, copy) void(^zc_comfirmFinishedImage)(UIImage *image);

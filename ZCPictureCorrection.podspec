@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ZCPictureCorrection"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "ZCPictureCorrection Kit"
   spec.description  = "ZCPictureCorrection 图片矫正"
   spec.platform     = :ios, '8.0'
