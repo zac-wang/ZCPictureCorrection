@@ -1,6 +1,0 @@
-framework module ZCPictureCorrection {
-  umbrella header "ZCPictureCorrection.h"
-
-  export *
-  module * { export * }
-}
