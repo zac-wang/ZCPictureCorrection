@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <ZCEasyLibrary/ZCSelectImagePicker.h>
-#import <ZCPictureCorrection/ZCPictureCorrection.h>
+#import "PictureCorrectionCutVC.h"
 
 @interface ViewController ()  {
     ZCSelectImagePicker *select;
@@ -38,8 +38,8 @@
 
 - (void)transitionToZCPictureCorrectionPictureVC:(UIImage *)image
 {
-    ZCPictureCorrectionCutVC *adjustViewController = [[ZCPictureCorrectionCutVC alloc] init];
-    adjustViewController.sourceImage = image;
+    PictureCorrectionCutVC *adjustViewController = [[PictureCorrectionCutVC alloc] init];
+    adjustViewController.zc_sourceImage = image;
     adjustViewController.zc_comfirmFinishedImage = ^(UIImage *image) {
         self.imageView.image = image;
         [self.navigationController popToRootViewControllerAnimated:YES];

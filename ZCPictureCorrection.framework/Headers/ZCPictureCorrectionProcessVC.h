@@ -10,16 +10,16 @@
 
 @interface ZCPictureCorrectionProcessVC : UIViewController <UIScrollViewDelegate>
 
-@property BOOL imageFrameEdited;
+@property BOOL zc_imageFrameEdited;
 
-@property (strong, nonatomic) UIImage *sourceImage;
-@property (strong, nonatomic) UIImage *adjustedImage;
+@property (strong, nonatomic) UIImage *zc_sourceImage;
+@property (strong, nonatomic) UIImage *zc_adjustedImage;
 
-@property (strong, nonatomic) UIImageView *finalImageView;
+@property (strong, nonatomic) UIImageView *zc_finalImageView;
 
 
 /// 环形进度条
-@property (strong, nonatomic) UIActivityIndicatorView *progressIndicator;
+@property (strong, nonatomic) UIActivityIndicatorView *zc_progressIndicator;
 
 /// 初始化按钮及事件
 - (void)zc_initialView;

@@ -9,6 +9,7 @@
 //Dedected Points
 
 #import <UIKit/UIKit.h>
+#import "ZCPictureCorrectionMaskView.h"
 
 
 @interface ZCPictureCorrectionCutVC : UIViewController
@@ -16,9 +17,11 @@
     BOOL isGray;
 }
 
-@property (strong, nonatomic) UIImage *sourceImage;
-@property (strong, nonatomic) UIImage *adjustedImage;
-@property (readonly, nonatomic) UIImageView *sourceImageView;
+@property (strong, nonatomic) UIImage *zc_sourceImage;
+@property (strong, nonatomic) UIImage *zc_adjustedImage;
+
+@property (readonly, nonatomic) UIImageView *zc_sourceImageView;
+@property (strong, nonatomic) ZCPictureCorrectionMaskView *zc_adjustRectMaskView;
 
 /// 初始化按钮及事件
 - (void)zc_initialView;
@@ -26,6 +29,8 @@
 - (void)zc_resetRectFrame;
 /// 获取 ”当前选中区域“ 的图片
 - (UIImage *)zc_confirmedImage;
+/// 确定区域选择
+- (void)zc_confirmedImageClick;
 
 @property(nonatomic, copy) void(^zc_comfirmFinishedImage)(UIImage *image);
 
