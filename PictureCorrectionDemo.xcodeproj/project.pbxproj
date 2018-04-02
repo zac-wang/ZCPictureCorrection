@@ -12,8 +12,6 @@
 		9356D7B11FFC9F36007D99F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356D7B01FFC9F36007D99F2 /* ViewController.m */; };
 		9356D7B91FFC9F36007D99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9356D7B71FFC9F36007D99F2 /* LaunchScreen.storyboard */; };
 		9356D7BC1FFC9F36007D99F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356D7BB1FFC9F36007D99F2 /* main.m */; };
-		938C519C200C45F400395484 /* PictureCorrectionCutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C519B200C45F400395484 /* PictureCorrectionCutVC.m */; };
-		938C519F200C461A00395484 /* PictureCorrectionProcessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C519E200C461A00395484 /* PictureCorrectionProcessVC.m */; };
 		9398067E1FFCAB6B0069843A /* ZCPictureCorrection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9398067A1FFCAAE60069843A /* ZCPictureCorrection.framework */; };
 		9398067F1FFCAB6B0069843A /* ZCPictureCorrection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9398067A1FFCAAE60069843A /* ZCPictureCorrection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		939806821FFCABE00069843A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939806811FFCABE00069843A /* Main.storyboard */; };
@@ -38,6 +36,10 @@
 /* Begin PBXFileReference section */
 		879747CC45B7F9B8561A7A8B /* Pods-PictureCorrectionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureCorrectionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9305A03D200C84D500AA093B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9305A040200D95A200AA093B /* PictureCorrectionCutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCorrectionCutVC.h; sourceTree = "<group>"; };
+		9305A041200D95A200AA093B /* PictureCorrectionCutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCorrectionCutVC.m; sourceTree = "<group>"; };
+		9305A042200D95A200AA093B /* PictureCorrectionProcessVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCorrectionProcessVC.h; sourceTree = "<group>"; };
+		9305A043200D95A200AA093B /* PictureCorrectionProcessVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCorrectionProcessVC.m; sourceTree = "<group>"; };
 		9356D7A91FFC9F36007D99F2 /* PictureCorrectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureCorrectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9356D7AC1FFC9F36007D99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9356D7AD1FFC9F36007D99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,10 +48,6 @@
 		9356D7B81FFC9F36007D99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9356D7BA1FFC9F36007D99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9356D7BB1FFC9F36007D99F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		938C519A200C45F400395484 /* PictureCorrectionCutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCorrectionCutVC.h; sourceTree = "<group>"; };
-		938C519B200C45F400395484 /* PictureCorrectionCutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCorrectionCutVC.m; sourceTree = "<group>"; };
-		938C519D200C461A00395484 /* PictureCorrectionProcessVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCorrectionProcessVC.h; sourceTree = "<group>"; };
-		938C519E200C461A00395484 /* PictureCorrectionProcessVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCorrectionProcessVC.m; sourceTree = "<group>"; };
 		9398067A1FFCAAE60069843A /* ZCPictureCorrection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZCPictureCorrection.framework; sourceTree = SOURCE_ROOT; };
 		939806811FFCABE00069843A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		939806901FFCB3B90069843A /* ZCPictureCorrectionPng.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZCPictureCorrectionPng.bundle; sourceTree = SOURCE_ROOT; };
@@ -79,6 +77,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9305A03F200D95A200AA093B /* PictureCorrection */ = {
+			isa = PBXGroup;
+			children = (
+				9305A040200D95A200AA093B /* PictureCorrectionCutVC.h */,
+				9305A041200D95A200AA093B /* PictureCorrectionCutVC.m */,
+				9305A042200D95A200AA093B /* PictureCorrectionProcessVC.h */,
+				9305A043200D95A200AA093B /* PictureCorrectionProcessVC.m */,
+			);
+			path = PictureCorrection;
+			sourceTree = SOURCE_ROOT;
+		};
 		9356D7A01FFC9F36007D99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +113,7 @@
 				9356D7AD1FFC9F36007D99F2 /* AppDelegate.m */,
 				9356D7AF1FFC9F36007D99F2 /* ViewController.h */,
 				9356D7B01FFC9F36007D99F2 /* ViewController.m */,
-				938C519A200C45F400395484 /* PictureCorrectionCutVC.h */,
-				938C519B200C45F400395484 /* PictureCorrectionCutVC.m */,
-				938C519D200C461A00395484 /* PictureCorrectionProcessVC.h */,
-				938C519E200C461A00395484 /* PictureCorrectionProcessVC.m */,
+				9305A03F200D95A200AA093B /* PictureCorrection */,
 				939806901FFCB3B90069843A /* ZCPictureCorrectionPng.bundle */,
 				9398067A1FFCAAE60069843A /* ZCPictureCorrection.framework */,
 				939806811FFCABE00069843A /* Main.storyboard */,
@@ -257,8 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938C519C200C45F400395484 /* PictureCorrectionCutVC.m in Sources */,
-				938C519F200C461A00395484 /* PictureCorrectionProcessVC.m in Sources */,
 				9356D7B11FFC9F36007D99F2 /* ViewController.m in Sources */,
 				9356D7BC1FFC9F36007D99F2 /* main.m in Sources */,
 				9356D7AE1FFC9F36007D99F2 /* AppDelegate.m in Sources */,

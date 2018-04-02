@@ -42,7 +42,7 @@
     adjustViewController.zc_sourceImage = image;
     adjustViewController.zc_comfirmFinishedImage = ^(UIImage *image) {
         self.imageView.image = image;
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        [self.navigationController popToViewController:self animated:YES];
     };
     
     [self.navigationController pushViewController:adjustViewController animated:NO];
