@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB3EAC42755D98200A9F64A /* PictureCorrectionCutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305A041200D95A200AA093B /* PictureCorrectionCutVC.m */; };
+		3DB3EAC52755D98200A9F64A /* PictureCorrectionProcessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9305A043200D95A200AA093B /* PictureCorrectionProcessVC.m */; };
 		9305A03E200C84D500AA093B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9305A03D200C84D500AA093B /* Images.xcassets */; };
 		9356D7AE1FFC9F36007D99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356D7AD1FFC9F36007D99F2 /* AppDelegate.m */; };
 		9356D7B11FFC9F36007D99F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356D7B01FFC9F36007D99F2 /* ViewController.m */; };
@@ -146,7 +148,6 @@
 				9356D7A71FFC9F36007D99F2 /* Resources */,
 				939806801FFCAB6B0069843A /* Embed Frameworks */,
 				57A51C262F534328D620E1B6 /* [CP] Embed Pods Frameworks */,
-				F8CDCE865895166F8E68DD0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,8 +212,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo-frameworks.sh",
-				"${PODS_ROOT}/ZCEasyLibrary/Library/ZCEasyLibrary.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZCEasyLibrary/ZCEasyLibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -220,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		807C0DE28C9E1CCEC983129F /* [CP] Check Pods Manifest.lock */ = {
@@ -241,21 +242,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8CDCE865895166F8E68DD0C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureCorrectionDemo/Pods-PictureCorrectionDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB3EAC42755D98200A9F64A /* PictureCorrectionCutVC.m in Sources */,
+				3DB3EAC52755D98200A9F64A /* PictureCorrectionProcessVC.m in Sources */,
 				9356D7B11FFC9F36007D99F2 /* ViewController.m in Sources */,
 				9356D7BC1FFC9F36007D99F2 /* main.m in Sources */,
 				9356D7AE1FFC9F36007D99F2 /* AppDelegate.m in Sources */,
@@ -335,6 +323,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -384,6 +373,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -392,17 +382,18 @@
 			baseConfigurationReference = 879747CC45B7F9B8561A7A8B /* Pods-PictureCorrectionDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TF6UX56K9;
+				DEVELOPMENT_TEAM = ZBH92875G9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PictureCorrectionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wzc.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -411,17 +402,18 @@
 			baseConfigurationReference = E4834E1EB0A5A73655F47AD5 /* Pods-PictureCorrectionDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TF6UX56K9;
+				DEVELOPMENT_TEAM = ZBH92875G9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PictureCorrectionDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wzc.ceshi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

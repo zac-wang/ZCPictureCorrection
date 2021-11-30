@@ -33,7 +33,7 @@
     select.zc_selectPickerController = ^(UIImage *image) {
         [weakSelf transitionToZCPictureCorrectionPictureVC:image];
     };
-    [select zc_showWithViewController:self push:NO];
+    [select zc_showWithViewController:self];
 }
 
 - (void)transitionToZCPictureCorrectionPictureVC:(UIImage *)image
